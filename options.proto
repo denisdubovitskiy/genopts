@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "google/protobuf/descriptor.proto";
+
+option go_package = "github.com/denisdubovitskiy/genopts;genopts";
+
+extend google.protobuf.MessageOptions {
+  string method_name =  50001;
+}
